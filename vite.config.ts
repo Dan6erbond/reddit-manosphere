@@ -7,4 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["bootstrap"],
   },
+  base: process.env.NODE_ENV === "production" ? "/reddit-manosphere/" : "./",
 });
