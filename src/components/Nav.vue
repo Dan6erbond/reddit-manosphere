@@ -2,7 +2,7 @@
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <router-link class="navbar-brand" :to="{ name: 'home' }">
-        Keeping Track of the Reddit Manosphere
+        Keeping Track of Hate Subreddits
       </router-link>
       <button
         class="navbar-toggler"
