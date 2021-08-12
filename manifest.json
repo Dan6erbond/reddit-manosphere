@@ -1,0 +1,41 @@
+{
+  "pages/_default/_default.page.client.ts": {
+    "file": "assets/pages/_default/_default.page.client.ts.b4d4ac66.js",
+    "src": "pages/_default/_default.page.client.ts",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.92e22a8d.js"
+    ],
+    "css": [
+      "assets/pages/_default/_default.page.client.ts.ce06c5af.css"
+    ]
+  },
+  "_vendor.92e22a8d.js": {
+    "file": "assets/vendor.92e22a8d.js",
+    "dynamicImports": [
+      "pages/index.page.vue",
+      "pages/mgtow.page.vue",
+      "pages/_default/_default.page.client.ts"
+    ]
+  },
+  "pages/index.page.vue": {
+    "file": "assets/index.page.ff4b01c3.js",
+    "src": "pages/index.page.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.92e22a8d.js"
+    ],
+    "assets": [
+      "assets/logo.fc8207ff.png"
+    ]
+  },
+  "pages/mgtow.page.vue": {
+    "file": "assets/mgtow.page.a186d675.js",
+    "src": "pages/mgtow.page.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.92e22a8d.js"
+    ]
+  }
+}
