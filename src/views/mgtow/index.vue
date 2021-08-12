@@ -22,14 +22,8 @@
     <div class="p-2">
       <section v-for="category in categories" :key="category.name" class="">
         <h2>{{ category.name }}</h2>
-        <div
-          v-for="submission in category.submissions"
-          :key="submission.url"
-          class="mb-2"
-        >
-          <a target="_blank" :href="submission.url" class="text-break">{{
-            submission.url
-          }}</a>
+        <div v-for="submission in category.submissions" :key="submission.url">
+          <a target="_blank" :href="submission.url">{{ submission.url }}</a>
         </div>
       </section>
     </div>
@@ -38,7 +32,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { categories } from "../src/assets/mgtow-submissions";
+import { categories } from "../../assets/mgtow-submissions";
 
 export default defineComponent({
   setup() {

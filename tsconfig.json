@@ -1,21 +1,14 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
     "strict": true,
-    "module": "ES2020",
-    "moduleResolution": "Node",
-    "target": "ES2017",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client"],
-    "skipLibCheck": true,
-    "esModuleInterop": true,
     "jsx": "preserve",
-    "sourceMap": true
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "ts-node": {
-    "transpileOnly": true,
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  }
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/"> Keeping Track of Hate Subreddits </a>
+      <router-link class="navbar-brand" :to="{ name: 'home' }">
+        Keeping Track of Hate Subreddits
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -16,12 +18,14 @@
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a
-              :class="['nav-link', { active: $urlPathname === window?.location?.pathname }]"
-              href="/mgtow"
+            <router-link
+              class="nav-link"
+              active-class="active"
+              aria-current="page"
+              :to="{ name: 'mgtow' }"
             >
               MGTOW
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>
