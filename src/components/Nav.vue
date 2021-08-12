@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/"> Keeping Track of Hate Subreddits </a>
+      <a class="navbar-brand" :href="$baseUrl">
+        Keeping Track of Hate Subreddits
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,8 +19,8 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a
-              :class="['nav-link', { active: $urlPathname === window?.location?.pathname }]"
-              href="/mgtow"
+              :class="['nav-link', { active: $urlPathname === '/mgtow' }]"
+              :href="$baseUrl + 'mgtow'"
             >
               MGTOW
             </a>

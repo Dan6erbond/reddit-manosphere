@@ -23,6 +23,7 @@ function createApp(pageContext: PageContext) {
 
   const app = createSSRApp(PageWithLayout);
 
+  app.config.globalProperties.$baseUrl = import.meta.env.BASE_URL;
   app.config.globalProperties.$urlPathname = pageContext.urlPathname;
   // We make `pageContext.routeParams` available in all components as `$routeParams`
   // (e.g. `$routeParams.movieId` for a Route String `/movie/:movieId`).
