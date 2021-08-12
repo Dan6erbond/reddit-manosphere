@@ -1,13 +1,13 @@
 <template>
   <Nav></Nav>
   <main>
-    <router-view></router-view>
+    <slot/>
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Nav from "./components/Nav.vue";
+import Nav from "../../src/components/Nav.vue";
 
 export default defineComponent({
   name: "App",
